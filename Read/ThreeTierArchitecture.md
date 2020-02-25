@@ -1,13 +1,4 @@
-﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title></title>
-</head>
-<body>
-    <p>
-        in a C# application. 3-tier architecture is a very famous and well known buzzword in the world of software development. If we analyze any traditional project then we will find that most of (at least 60-70%) them have traditional N-tier, basically 3-tier architecture. It does not matter whether it is a web or Windows application, we can implement 3-tier architecture in any type of environment.
+﻿        In a C# application. 3-tier architecture is a very famous and well known buzzword in the world of software development. If we analyze any traditional project then we will find that most of (at least 60-70%) them have traditional N-tier, basically 3-tier architecture. It does not matter whether it is a web or Windows application, we can implement 3-tier architecture in any type of environment.
 
         Although it is a very well known and common architecture, it's not very clear to beginner developers or those who are very new in project development.
 
@@ -38,6 +29,3 @@
         Data Access Layer
 
         On top of the Business Logic Layer is the Data Access Layer. It contains methods that help the business layer to connect with the database and perform CRUD operations. Generally all database related code and stuff belongs to the Data Access Layer. Sometimes people use a platform-independent Data Access Layer to fetch data from various database vendors.
-    </p>
-</body>
-</html>
