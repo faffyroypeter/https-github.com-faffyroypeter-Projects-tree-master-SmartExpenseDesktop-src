@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIS.DataAccess", "SIS.DataA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIS.UserInterface", "SIS.UserInterface\SIS.UserInterface.csproj", "{A2BC5D19-C471-4229-8127-577C089ADE69}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "StudentDB", "StudentDB\StudentDB.sqlproj", "{13DF6DD2-C990-4320-BC13-445A94D2FADF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,12 @@ Global
 		{A2BC5D19-C471-4229-8127-577C089ADE69}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2BC5D19-C471-4229-8127-577C089ADE69}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2BC5D19-C471-4229-8127-577C089ADE69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13DF6DD2-C990-4320-BC13-445A94D2FADF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13DF6DD2-C990-4320-BC13-445A94D2FADF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13DF6DD2-C990-4320-BC13-445A94D2FADF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{13DF6DD2-C990-4320-BC13-445A94D2FADF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13DF6DD2-C990-4320-BC13-445A94D2FADF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13DF6DD2-C990-4320-BC13-445A94D2FADF}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
