@@ -7,9 +7,9 @@ namespace SIS.DataAccess
     public class clsDataAccess
     {
         // Sql Express edition 
-        string conString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=StudentDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        string conString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=SmartExpenseTracker;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
-        public void InsertStudent(string roleNo, string firstName, string lastName, string place)
+        public void InsertUser(string name, string userName, string email, string password)
         {
             try
             {
@@ -18,14 +18,14 @@ namespace SIS.DataAccess
                 SqlCommand cmd;
               
                 //SQL STMT
-                const string sql = "INSERT INTO [dbo].[TblStudentInfo] (RoleNo,FirstName,LastName,City) VALUES (@ROLE_NO,@FIRST_NAME,@LAST_NAME,@CITY)";
+                const string sql = "INSERT INTO [dbo].[TblUsers] ([Name],UserName,Email,[Password]) VALUES (@NAME,@USER_NAME,@EMAIL,@PASSWORD)";
                 cmd = new SqlCommand(sql, con);
 
                 //ADD PARAMS
-                cmd.Parameters.AddWithValue("@ROLE_NO", roleNo);
-                cmd.Parameters.AddWithValue("@FIRST_NAME", firstName);
-                cmd.Parameters.AddWithValue("@LAST_NAME", lastName);
-                cmd.Parameters.AddWithValue("@CITY", place);
+                cmd.Parameters.AddWithValue("@NAME", name);
+                cmd.Parameters.AddWithValue("@USER_NAME", userName);
+                cmd.Parameters.AddWithValue("@EMAIL", email);
+                cmd.Parameters.AddWithValue("@PASSWORD", password);
 
                 //OPEN CON AND EXEC INSERT
                 try
@@ -49,10 +49,10 @@ namespace SIS.DataAccess
             }
         }
 
-        public DataTable FetchStudents()
+        public DataTable FetchUsers()
         {
             SqlConnection con = new SqlConnection(conString);
-            var commandText = "SELECT Id,RoleNo,FirstName,LastName,City FROM [dbo].[TblStudentInfo]";
+            var commandText = "SELECT [name],UserName,Email,[Password] FROM [dbo].[TblUsers]";
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(commandText, con);
 
             // Create DataSet which acts like a container to the query result executed from sql server

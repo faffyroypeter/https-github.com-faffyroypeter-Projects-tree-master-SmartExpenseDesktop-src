@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{90AD7183-411D-4F64-8F81-D7149D892196}</ProjectGuid>
+    <ProjectGuid>{E0569D6C-9DC8-41BE-A080-6A60EA5E1DF7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SIS.BusinessLogic</RootNamespace>
-    <AssemblyName>SIS.BusinessLogic</AssemblyName>
+    <RootNamespace>SET.DataAccess</RootNamespace>
+    <AssemblyName>SET.DataAccess</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,14 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="clsStudentSystem.cs" />
+    <Compile Include="clsDataAccess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\SIS.DataAccess\SIS.DataAccess.csproj">
-      <Project>{E0569D6C-9DC8-41BE-A080-6A60EA5E1DF7}</Project>
-      <Name>SIS.DataAccess</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -3,17 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIS.BusinessLogic", "SIS.BusinessLogic\SIS.BusinessLogic.csproj", "{90AD7183-411D-4F64-8F81-D7149D892196}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SET.BusinessLogic", "SIS.BusinessLogic\SET.BusinessLogic.csproj", "{90AD7183-411D-4F64-8F81-D7149D892196}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIS.DataAccess", "SIS.DataAccess\SIS.DataAccess.csproj", "{E0569D6C-9DC8-41BE-A080-6A60EA5E1DF7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SET.DataAccess", "SIS.DataAccess\SET.DataAccess.csproj", "{E0569D6C-9DC8-41BE-A080-6A60EA5E1DF7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIS.UserInterface", "SIS.UserInterface\SIS.UserInterface.csproj", "{A2BC5D19-C471-4229-8127-577C089ADE69}"
-EndProject
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "StudentDB", "StudentDB\StudentDB.sqlproj", "{13DF6DD2-C990-4320-BC13-445A94D2FADF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SET.UserInterface", "SIS.UserInterface\SET.UserInterface.csproj", "{A2BC5D19-C471-4229-8127-577C089ADE69}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EE999946-8E59-4A16-B76D-BE7B994941D3}"
 	ProjectSection(SolutionItems) = preProject
-		Read\Beginner-DotNet.pdf = Read\Beginner-DotNet.pdf
 		Read\ThreeTierArchitecture.md = Read\ThreeTierArchitecture.md
 	EndProjectSection
 EndProject
@@ -35,12 +32,6 @@ Global
 		{A2BC5D19-C471-4229-8127-577C089ADE69}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2BC5D19-C471-4229-8127-577C089ADE69}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2BC5D19-C471-4229-8127-577C089ADE69}.Release|Any CPU.Build.0 = Release|Any CPU
-		{13DF6DD2-C990-4320-BC13-445A94D2FADF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{13DF6DD2-C990-4320-BC13-445A94D2FADF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{13DF6DD2-C990-4320-BC13-445A94D2FADF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{13DF6DD2-C990-4320-BC13-445A94D2FADF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{13DF6DD2-C990-4320-BC13-445A94D2FADF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{13DF6DD2-C990-4320-BC13-445A94D2FADF}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

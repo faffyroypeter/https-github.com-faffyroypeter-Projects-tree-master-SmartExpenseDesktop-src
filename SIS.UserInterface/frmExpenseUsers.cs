@@ -13,13 +13,14 @@ namespace StudentTrackingSystem
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            var roleNo = txtStudentRoleNo.Text.Trim();
-            var firstName = txtFirstName.Text.Trim();
-            var lastName = txtLastName.Text.Trim();
-            var place = txtPlace.Text.Trim();
+            var name = txtName.Text.Trim();
+            var userName = txtUserName.Text.Trim();
+            var emailId = txtEmail.Text.Trim();
+            var password = txtPassword.Text.Trim();
+            var confirmPassword = txtConfirmPassword.Text.Trim();
 
             clsStudentSystem objStudentSystem = new clsStudentSystem();
-            objStudentSystem.SaveStudentRecord(roleNo, firstName, lastName, place);
+            objStudentSystem.SaveUserRecord(name, userName, emailId, password);
 
             FetchAllStudents();
         }
@@ -27,15 +28,16 @@ namespace StudentTrackingSystem
         private void FetchAllStudents()
         {
             clsStudentSystem objStudentSystem = new clsStudentSystem();
-            dgStudent.DataSource = objStudentSystem.FetchStudents();
+            dgStudent.DataSource = objStudentSystem.FetchUsers();
         }
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-            txtStudentRoleNo.Text = string.Empty;
-            txtFirstName.Text = string.Empty;
-            txtLastName.Text = string.Empty;
-            txtPlace.Text = string.Empty;
+            txtName.Text = string.Empty;
+            txtUserName.Text = string.Empty;
+            txtEmail.Text = string.Empty;
+            txtPassword.Text = string.Empty;
+            txtConfirmPassword.Text = string.Empty;
         }
 
         private void frmStudent_Load(object sender, EventArgs e)
@@ -44,6 +46,11 @@ namespace StudentTrackingSystem
         }
 
         private void manageStudentsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
