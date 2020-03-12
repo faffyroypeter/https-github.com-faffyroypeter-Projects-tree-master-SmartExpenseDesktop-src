@@ -11,6 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SET.UserInterface", "SIS.Us
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EE999946-8E59-4A16-B76D-BE7B994941D3}"
 	ProjectSection(SolutionItems) = preProject
+		Read\SET.docx = Read\SET.docx
 		Read\ThreeTierArchitecture.md = Read\ThreeTierArchitecture.md
 	EndProjectSection
 EndProject
